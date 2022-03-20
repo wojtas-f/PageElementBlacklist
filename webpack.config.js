@@ -1,13 +1,25 @@
 const path = require('path');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+  devServer: {
+    hot: true,
+    static: {
+      directory: path.join(__dirname, 'public'),
+      publicPath: '/',
+    },
+    historyApiFallback: true,
+    client: {
+      overlay: true,
+    },
+  },
   entry: {
     popup: './src/popup.js',
     options: './src/options.js',
-    background: './src/background.js',
+    // background: './src/background.js',
   },
   output: {
-    path: path.join(__dirname, '/assets/js'),
+    path: path.join(__dirname, '/public/js'),
     filename: '[name].bundle.js',
   },
   module: {
@@ -19,6 +31,21 @@ module.exports = {
           loader: 'babel-loader',
         },
       },
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: 'html-loader',
+            options: { minimize: true },
+          },
+        ],
+      },
     ],
   },
+  plugins: [
+    new HtmlWebPackPlugin({
+      template: './views/index.html',
+      filename: './index.html',
+    }),
+  ],
 };
