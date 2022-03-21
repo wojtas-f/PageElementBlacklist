@@ -1,6 +1,8 @@
 # PageElementsBlacklist
 
-This chrome browser extension gives you a set of tools that can be used to create list of elements that will be visually blocked on certain pages.
+## Description
+
+This chrome browser extension gives you a set of tools, that can be used to create list of restricted elements for each website. Each selected element will be hidden, moved out of screen or removed completely from the page.
 
 ## Functional specification
 
@@ -10,15 +12,9 @@ The user can:
 * define list of blocked elements for each websites
 * each element form the list can be removed or edited
 
-## Description
-This chrome browser extension gives you a set of tools that can be used to create list of elements that will be visually blocked on certain pages.
-
-
 ## Installation
 
-
 ## Usage
-
 
 ## Project status
 
