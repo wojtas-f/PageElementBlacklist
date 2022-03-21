@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
 import Main from './Main';
-import List from './List';
+import Lists from './Lists';
 import Sidebar from './Sidebar';
 
 const App = () => (
@@ -11,7 +11,7 @@ const App = () => (
       <Sidebar />
       <Routes>
         <Route path="/" exact element={<Main />} />
-        <Route path="/list" exact element={<List />} />
+        <Route path="/list" exact element={<Lists />} />
       </Routes>
     </div>
   </BrowserRouter>

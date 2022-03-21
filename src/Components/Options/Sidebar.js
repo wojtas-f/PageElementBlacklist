@@ -7,7 +7,7 @@ const Sidebar = () => {
       <ul className="sidebar-list">
         <li className="sidebar-link">
           <Link to="/">
-            <i class="material-icons">home</i> Home 1
+            <i class="material-icons">home</i> Home
           </Link>
         </li>
 
@@ -18,14 +18,14 @@ const Sidebar = () => {
         </li>
 
         <li className="sidebar-link">
-          <Link to="/">
+          <Link to="/list">
             <i class="material-icons">list</i> View list
           </Link>
         </li>
 
         <li className="sidebar-link">
-          <Link to="/list">
-            <i class="material-icons">settings</i> List
+          <Link to="/settings">
+            <i class="material-icons">settings</i> Settings
           </Link>
         </li>
       </ul>
