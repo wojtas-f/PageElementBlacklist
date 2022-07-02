@@ -1,0 +1,76 @@
+:root {
+  --main: rgb(31, 55, 65);
+  --main-contrast: azure;
+  --main-contrast--hover: aqua;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#options.options {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  color: var(--main);
+  background-color: var(--main-contrast);
+}
+
+/** SIDEBAR */
+
+#options .sidebar {
+  width: 25%;
+  background-color: var(--main);
+  height: 75%;
+  padding: 0;
+  margin: 0;
+  align-self: flex-start;
+  border-radius: 0 0 155px 0;
+}
+
+#options .sidebar-list {
+  margin: 5px;
+  margin-top: 20px;
+  list-style: none;
+}
+
+#options .sidebar-link {
+  font-size: 1.3rem;
+  color: var(--main-contrast);
+}
+
+#options .sidebar-link a {
+  font-size: 1.5rem;
+  color: var(--main-contrast);
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#options .sidebar-link a:hover {
+  color: var(--main-contrast--hover);
+}
+
+#options .sidebar-link a * {
+  margin-right: 10px;
+  padding: 10px 0;
+}
+
+/** MAIN */
+
+#options .main {
+  width: 75%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  padding: 10px;
+}

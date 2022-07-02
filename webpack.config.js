@@ -16,7 +16,7 @@ module.exports = {
   entry: {
     popup: './src/popup.js',
     options: './src/options.js',
-    // background: './src/background.js',
+    background: './src/background.js',
   },
   output: {
     path: path.join(__dirname, '/public/js'),
@@ -45,7 +45,7 @@ module.exports = {
   plugins: [
     new HtmlWebPackPlugin({
       template: './views/index.html',
-      filename: './index.html',
+      filename: '../[name].html',
     }),
   ],
 };

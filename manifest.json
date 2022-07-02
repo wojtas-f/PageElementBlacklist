@@ -7,7 +7,7 @@
   "background": {
     "service_worker": "public/js/background.bundle.js"
   },
-  "options_page": "public/index.html",
+  "options_page": "public/background.html",
   "action": {
     "default_popup": "public/popup.html",
     "default_icon": {
