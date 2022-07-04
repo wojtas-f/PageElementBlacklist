@@ -44,8 +44,12 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: './views/index.html',
-      filename: '../[name].html',
+      template: './views/options.html',
+      filename: '../options.html',
+    }),
+    new HtmlWebPackPlugin({
+      template: './views/popup.html',
+      filename: '../popup.html',
     }),
   ],
 };

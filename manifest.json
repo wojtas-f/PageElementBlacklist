@@ -7,14 +7,14 @@
   "background": {
     "service_worker": "public/js/background.bundle.js"
   },
-  "options_page": "public/background.html",
+  "options_page": "public/options.html",
   "action": {
     "default_popup": "public/popup.html",
     "default_icon": {
-        "16": "/public/images/icon-16x16.png",
-        "32": "/public/images/icon-32x32.png",
-        "48": "/public/images/icon-48x48.png",
-        "128": "/public/images/icon-128x128.png"
+      "16": "/public/images/icon-16x16.png",
+      "32": "/public/images/icon-32x32.png",
+      "48": "/public/images/icon-48x48.png",
+      "128": "/public/images/icon-128x128.png"
     }
-}
+  }
 }
